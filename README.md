@@ -14,8 +14,8 @@ Flask Book Management API is a web application built using Flask and SQLite, all
   - [Update an Existing Book](#update-an-existing-book)
   - [Delete a Book](#delete-a-book)
 - [Usage](#usage)
+- [Building and Running with Docker](#building-and-running-with-docker)
 - [Contributors](#contributors)
-- [License](#license)
 
 ## Requirements
 - Python 3.x
@@ -57,6 +57,15 @@ Flask Book Management API is a web application built using Flask and SQLite, all
 2. Obtain an access token by logging in with the registered user credentials using the `/login` endpoint.
 3. Use the obtained access token to perform CRUD operations on books using the `/books` endpoints.
 4. Remember to include the access token in the request headers for authenticated requests.
+
+## Building and Running with Docker
+
+To build and run the Flask Book Management API using Docker, follow these steps:
+
+1. Install Docker on your machine if you haven't already.
+2. In the project root directory, build the Docker image with the command: docker build -t flask-book-api .
+3. Run the Docker container with: docker run -p 5000:5000 flask-book-api
+4. The server will be accessible at http://127.0.0.1:5000/.
 
 ## Contributors
 - [Damir](https://github.com/damirEDS)
